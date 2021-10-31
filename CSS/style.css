@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     height: 50px;
-    width: 45%;
+    width: 60%;
     align-items: center;
 }
 
@@ -19,36 +19,42 @@ body{
 }
 
 .banner_carousel{
-    width: 1230px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     overflow: hidden;
-    gap: 15px;
-    /* padding: 2%; */
     position: relative;
+    /* padding: 1%; */
+    gap: 1%;
 }
 
 .banner_carousel .banner{
-    min-width: 600px;
-    min-height: 350px;
-    border: 2px solid red;
-
-    transform: translateX(-285px);
-    transition: ease-in-out;
+    min-width: 49%;
+    min-height: 450px;
+    /* border: 2px solid pink; */
+    transform: translateX(-50%);
+    transition: ease-out;
     transition-duration: .5s;
-    
+    /* padding: .5%; */
+}
+
+.banner_carousel .banner img{
+    /* border: 2px solid black; */
+    width: 100%;
+    border-radius: 5px;
+    height: 90%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
 }
 
 .banner_carousel button{
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);    
 }
 
 .banner_carousel .b1{
-    left: 1%;
+    left: 2%;
 }
 
 .banner_carousel .b2{
-    right: 1%;
+    right: 2%;
 }
